@@ -10,13 +10,11 @@
 
 **Module:** CCS3308 – Virtualization and Containers
 
-**Lab:** Lab 06 – Kubernetes Fundamentals with Minikube
-
 ---
 
-# Objective
+# Introduction
 
-The objective of this laboratory is to learn the fundamentals of Kubernetes by creating, deploying, scaling, exposing, updating, troubleshooting, and monitoring containerized applications using Minikube.
+This lab introduced the basic concepts of Kubernetes using Minikube. During the practical session, I learned how to create Pods, Deployments, Services, and StatefulSets. I also practiced scaling applications, performing rolling updates, troubleshooting failed Pods, and working with persistent storage.
 
 ---
 
@@ -47,39 +45,39 @@ lab6/
 
 # Tasks Completed
 
-## Part 1
-Cluster verification using Minikube.
+### Part 1 – Cluster Setup
+Verified that Minikube and Kubernetes were running correctly.
 
-## Part 2
-Created and deployed a standalone frontend Pod.
+### Part 2 – Pod Creation
+Created and deployed a standalone Nginx Pod.
 
-## Part 3
-Created a Deployment and observed Kubernetes self-healing.
+### Part 3 – Deployment
+Created a Deployment and observed Kubernetes automatically recreate deleted Pods.
 
-## Part 4
-Scaled the Deployment up and down.
+### Part 4 – Scaling
+Scaled the Deployment up and down using different replica counts.
 
-## Part 5
-Exposed the Deployment using a Kubernetes Service.
+### Part 5 – Service
+Exposed the frontend application through a Kubernetes Service and accessed it in a web browser.
 
-## Part 6
-Performed a rolling update and rollback.
+### Part 6 – Rolling Updates
+Updated the application image and performed a rollback to the previous version.
 
-## Part 7
-Deployed a multi-tier application consisting of:
+### Part 7 – Multi-Tier Application
+Deployed a simple application consisting of:
 - Frontend
 - API
 - Cache
-- PostgreSQL
+- PostgreSQL Database
 
-## Part 8
-Verified PersistentVolume functionality and monitored resource usage.
+### Part 8 – Storage and Monitoring
+Verified persistent storage and monitored CPU and memory usage using the Metrics Server.
 
-## Part 9
-Troubleshot a failed Pod using kubectl describe.
+### Part 9 – Troubleshooting
+Created a faulty Pod and used Kubernetes commands to identify the reason for the failure.
 
-## Part 10
-Deleted all Kubernetes resources and cleaned up the cluster.
+### Part 10 – Cleanup
+Deleted all Kubernetes resources created during the lab.
 
 ---
 
@@ -90,9 +88,10 @@ Deleted all Kubernetes resources and cleaned up the cluster.
 - Docker
 - YAML
 - kubectl
+- Visual Studio Code
 
 ---
 
 # Conclusion
 
-This laboratory provided practical experience with Kubernetes resource management, Deployments, Services, StatefulSets, Persistent Volumes, scaling, rolling updates, monitoring, troubleshooting, and cluster cleanup. The lab demonstrated how Kubernetes automates container orchestration while ensuring application availability and reliability.
+This lab helped me understand the core features of Kubernetes through practical activities. I learned how Kubernetes manages applications, automatically recovers failed Pods, scales workloads, exposes services, and provides persistent storage. Overall, the lab gave me valuable hands-on experience with Kubernetes fundamentals.
